@@ -1,0 +1,37 @@
+* Python - Python is a high level, interpreted and dynamically typed programming language.
+
+* High level programming language - Programming languages that can be easily understood by coders because of usage of language in building logics.
+
+* Interpreted - In interpreted programming languages, the code is translated into machine language and executed line by line at its runtime.
+
+* Dynamically typed programming language - In dynamically typed programming languages, we do not need to specify the data type beforehand, it assigns the data type based on the value at runtime.
+
+* Variable: Variables serve as data storage containers, which can hold various data types. They are identified by unique labels, allowing for easy data access and 
+  manipulation by referring to these labels.
+  Example:-
+  x=15
+  x is a variable which store the address of the data ype tvalue 10(where 10 is the interger data type)
+
+* Data Types:Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data.
+          Numeric
+          Sequence Type
+          Boolean
+          Set
+          Dictionary
+          Binary Types
+ * Type Conversion:The act of changing an object’s data type is known as type conversion. The Python interpreter automatically performs Implicit Type Conversion. Python prevents Implicit Type Conversion from losing data.
+    The user converts the data types of objects using specified functions in explicit type conversion
+  In Python
+1.To Integer: int(x) converts x to an integer
+
+2.To Float: float(x) converts x to a floating-point number.
+
+3.To String: str(x) converts x to a string.
+leet code problem solution:
+          class Solution(object):
+    def findDuplicate(self, nums):
+        nums.sort()
+        for i in range(1,len(nums)):
+            if(nums[i]==nums[i-1]):
+                return nums[i]
+        return -1
